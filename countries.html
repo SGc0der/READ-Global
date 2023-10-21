@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Countries</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="fadeBody">
+        <div class="menu">
+            <a onclick="rToHome();">Home</a>
+            <a>About Us</a>
+            <a onclick="rToMission();">Our Mission</a>
+            <a onclick="rToImpact();">Our Impact</a>
+            <a id='countriesA' onclick="rToCountries();">Countries</a>
+            <a onclick="rToDonate();" id="donate_btn">Donate</a>
+            <a target="_blank" href="https://www.readglobal.org/">
+                 <img src="logo.jpeg" width="40px" height="40px" id="logo">
+            </a>
+        </div>
+        <br>
+        <br>
+        <div style="background-color: #E29578; width: 100%; height: 350px;">
+            <div id="animationDiv">
+                <div style="width: 33%;" id="india" onclick="rToIndia();">
+                    <center>
+                        <img src="portal-archana.jpg" class="countryImg">
+                        <br>
+                        <label class="countryCaption">READ India</label>
+                        <p class="countryImgCaption">Families Learning Together for a Better Future</p>
+                    </center>
+                </div>
+                <div style="width: 33%;" id="nepal" onclick="rToNepal();">
+                    <center>
+                        <img src="portal-restaurantbus.jpg" class="countryImg">
+                        <br>
+                        <label class="countryCaption">READ Nepal</label>
+                        <p class="countryImgCaption">Launching a Restaurant Business</p>
+                    </center>
+                </div>
+                <div style="width: 33%;" id="bhutan" onclick="rToBhutan();">
+                    <center>
+                        <img src="portal-sonam.jpg" class="countryImg">
+                        <br>
+                        <label class="countryCaption">READ Bhutan</label>
+                        <p class="countryImgCaption">Creating Stories through Digital Media</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
