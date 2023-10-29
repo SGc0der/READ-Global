@@ -1,8 +1,0 @@
-1. Create a hover dropdown on countries a tag.
-   Contents- READ India, Bhutan, Nepal
-2. Add a marquee for donation in index.html
-3. Add link on clicking 'Donate' button.
-4. Add rotation animation on icons eg. menu icon.
-5. Stories of Empowerment (Country Affliates)
-   Country Affliates home page update
-6. Add another color in different sections?

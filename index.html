@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="menu">
+        <div class="menu" style="padding-top: 30px;
+        margin-bottom: 20px;">
            <a id="homeA">Home</a>
            <a onclick="rToAbt();">About Us</a>
-           <a onclick="rToMission();">Our Mission</a>
            <a onclick="rToImpact();">Our Impact</a>
            <a onclick="rToCountries();">Countries</a>
            <a onclick="rToDonate();" id="donate_btn">Donate</a>
@@ -17,24 +17,27 @@
                 <img src="logo.jpeg" width="40px" height="40px" id="logo">
            </a>
         </div>
-        <section id="home">
-            <center style="margin-left: 50px; margin-right: 20px;">
-                <br>
-                <hr>
-                <h1 style="font-weight: bold;">
-                Help us in SAVING LIVES</h1>
-                <label>A donation of as little as <label style="font-weight: bolder;">$1 </label>
-                can change the world</label>
-                <h3 style="text-transform: uppercase; padding: 5px; background-color: #E29578;">for the good
-                </h3>
-                <h4>We are transforming the lives of students, as well as creating oppurtunities for employment!
-                </h4>
-                <h2>To learn more about how we are contributing our role as heroes, view 
-                <h2 style="font-style: italic;">'Our Impact'
-                </h2></h2>
-                <hr>
-            </center>
-        </section>
+        <div style="width: 100%; background-image: url('gif.webp');
+        background-size: cover; padding-top: 5px; padding-bottom: 20px; margin-top: -20px;">
+            <section id="home">
+                <center style="margin-left: 50px; margin-right: 20px;">
+                    <br>
+                    <hr>
+                    <h1 style="font-weight: bold;">
+                    Help us in SAVING LIVES</h1>
+                    <label>A donation of as little as <label style="font-weight: bolder;">$1 </label>
+                    can change the world</label>
+                    <h3 style="text-transform: uppercase; padding: 5px; background-color: #EBEBD3;">for the good
+                    </h3>
+                    <h4>We are transforming the lives of students, as well as creating oppurtunities for employment!
+                    </h4>
+                    <h2>To learn more about how we are contributing our role as heroes, view 
+                    <h2 style="font-style: italic;">'Our Impact'
+                    </h2></h2>
+                    <hr>
+                </center>
+            </section>
+        </div>
         <br>
         <br>
         <div class="line">
@@ -46,7 +49,9 @@
                 </center>
             </label>
         </div>
-        <section id="images">
+        <h2 id="gallery">Gallery
+        </h2>
+        <marquee id="imagesMarquee">
             <div id="img1">
                 <img height="300px" width="600px" src="portal-programs.jpg">
                 <br>
@@ -67,8 +72,7 @@
                 <br>
                 <h1 class="image_caption">Economic Empowerments by READ</h1>
             </div>
-        </section>
-        <section id="about"></section>
+        </marquee>
         <script src="main.js"></script>
     </body>
 </html>

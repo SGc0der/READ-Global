@@ -64,3 +64,6 @@ function increaseCentres() {
     }
 }
 setInterval(increaseCentres(), 1);*/
+function rToStory() {
+    window.location = 'story.html';
+}

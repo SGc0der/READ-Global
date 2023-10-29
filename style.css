@@ -1,12 +1,12 @@
 body{
-    background: #006D77;
+    background: #FF595E;
 }
 #homeA{
     font-style: italic;
 }
 .menu{
     width: 95%;
-    background: #83C5BE;
+    background: #8AC926;
     padding: 30px;
     font-size: 25px;
     margin: 0;
@@ -16,13 +16,13 @@ body{
 }
 .menu a{
     margin-left: 40px;
-    color: #EDF6F9;
+    color: #EBEBD3;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #donate_btn{
     border-radius: 10px;
     padding: 10px;
-    background: #E29578;
+    background: #6A4C93;
     font-weight: bold;
     padding-left: 60px;
     padding-right: 60px;
@@ -31,14 +31,14 @@ body{
     animation-iteration-count: infinite;
 }
 #donate_btn:hover{
-    background-color: #FFDDD2;
+    background-color: #FFCA3A;
 }
 @keyframes border_ {
     from{
-        border: #006D77 solid 3px;
+        border: #8AC926 solid 3px;
     }
     to{
-        border: #FFDDD2 solid 3px;
+        border: #1982C4 solid 3px;
     }
 }
 #logo{
@@ -47,82 +47,91 @@ body{
     border: white 10px solid;
 }
 #home{
-    background-image: linear-gradient(to bottom right, #EDF6F9, #FFDDD2);
+    background-image: linear-gradient(to bottom right, #8AC926, #FFCA3A);
     animation-name: fade_in;
     animation-duration: 2s;
     animation-iteration-count: 1;
     height: 400px;
-    width: 600px;
+    width: 70%;
     margin-top: 40px;
     margin-left: 100px; 
     font-family: 'Courier New', Courier, monospace;
-    color: #006D77;
-    box-shadow: #FFDDD2 -15px -15px 10px;
+    color: #1982C4;
+    box-shadow: #FFCA3A -15px -15px 10px;
 }
 @keyframes fade_in {
     0%{
         opacity: 0;
         transform: translateY(-40px) scale(0.9);
+        box-shadow: #6A4C93 -15px -15px 10px;
     }
     100%{
         opacity: 1;
         transform: translateY(0px) scale(1);
+        box-shadow: #FFCA3A -15px -15px 10px;
     }
 }
 .line{
     height: 100px;
-    background-color: #EDF6F9;
+    background-color: #6A4C93;
 }
 #notice{
     margin-top: 50px;
-    color: #E29578;
+    color: #FF595E;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
-#images{
-    margin-top: 100px;
+#gallery{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: white;
+    text-align: center; 
+    margin-bottom: -25px;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    background-color: #1982C4;
 }
 #img1{
-    float: left;
-    margin-left: 100px;
-    animation-name: left_img;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    background: #E29578;
+    background: #1982C4;
     border: white 4px solid;
-    box-shadow: #EDF6F9 -10px -10px 10px;
+    box-shadow: #8AC926 -10px -10px 10px;
 }
 #img2{
-    float: right;
-    margin-right: 100px;
-    animation-name: right_img;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    background: #FFDDD2;
+    background: #FFCA3A;
     border: white 4px solid;
-    box-shadow: #E29578 -10px -10px 10px;
+    box-shadow: #1982C4 -10px -10px 10px;
 }
 #img3{
-    float: left;
-    margin-left: 100px;
-    animation-name: left_img;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    background: #E29578;
+    background: #6A4C93;
     border: white 4px solid;
-    box-shadow: #83C5BE -10px -10px 10px;
+    box-shadow: #FF595E -10px -10px 10px;
 }
 #img4{
-    float: right;
-    margin-right: 100px;
-    animation-name: right_img;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    background: #FFDDD2;
+    background: #8AC926;
     border: white 4px solid;
-    box-shadow: #EDF6F9 -10px -10px 10px;
+    box-shadow: #6A4C93 -10px -10px 10px;
 }
-@keyframes left_img {
+#imagesMarquee{
+    display: inline-flex;
+    width: 100%;
+}
+@keyframes slideL{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideR{
+    from{
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+/*@keyframes left_img {
     0%{
         transform: translateX(-50px) translateY(-50px) scale(0.9);
     }
@@ -137,10 +146,10 @@ body{
     100%{
         transform: translateX(0px) translateY(-150px) scale(1);
     }
-}
+}*/
 .image_caption{
     font-size: 18px;
-    color: #006D77;
+    color: white;
     margin-left: 50px;
 }
 .fadeBody{
@@ -156,14 +165,14 @@ body{
     margin-left: 50px;
 }
 .countryImg{
-    border: white ridge 2px;
+    border: white ridge 5px;
     height: 250px;
     border-radius: 15px;
     margin-top: 20px;
     margin-top: 15px;
 }
 .countryCaption{
-    color: #EDF6F9;
+    color: #1982C4;
     font-weight: 500;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
@@ -184,7 +193,7 @@ body{
     }
 }
 .countryImgCaption{
-    color: #FFDDD2;
+    color: #FFCA3A;
     font-weight: bold;
 }
 #gSchool{
@@ -192,16 +201,16 @@ body{
     height: 300px;
     background-image: url('Screenshot-government-kids.png');
     background-size: cover;
-    border: #E29578 ridge 5px;
+    border: #6A4C93 ridge 5px;
     border-radius: 20px;
     margin-top: 150px;
 }
 #gSchoolCaption{
-    color: #EDF6F9;
+    color: #FFCA3A;
     font-size: 30px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #006D77;
+    background-color: #1982C4;
     padding: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -222,7 +231,7 @@ body{
     animation-name: boldNcolor;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    color: #EDF6F9;
+    color: #1982C4;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 100px;
     margin-right: 100px;
@@ -230,21 +239,21 @@ body{
 @keyframes boldNcolor {
     from{
         font-weight: lighter;
-        color: black;
+        color: #8AC926;
     }to{
         font-weight: bold;
-        color: #EDF6F9;
+        color: #1982C4;
     }
 }
 .statistics{
-    background-color: #E29578;
+    background-color: #1982C4;
     height: 600px;
     width: 20%;
     border: #EDF6F9 3px solid;
 }
 .centres, .access, .villages{
     height: 200px;
-    color: #EDF6F9;
+    color: #8AC926;
     margin-left: 30px;
     font-weight: lighter;
 }
@@ -255,17 +264,17 @@ body{
 }
 #info{
     width: 80%;
-    color: #EDF6F9;
+    color: white;
 }
 #headInfo{
     animation-name: slide;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 2;
 }
 .line2{
     width: 100px;
     height: 10px;
-    background-color: #FFDDD2;
+    background-color: #FFCA3A;
     border-radius: 2px;
 }
 @keyframes slide {
@@ -282,7 +291,7 @@ body{
     background-color: #FFDDD2;
     border-radius: 2px;
     padding: 15px;
-    color: #006D77;
+    color: #1982C4;
 }
 .programs{
     display: inline-block;  
@@ -300,7 +309,7 @@ body{
 }
 #visitLine{
     padding: 15px;
-    background-color: #FFDDD2;
+    background-color: #1982C4;
     color: #E29578;
 }
 #bhutanChild{
@@ -308,7 +317,7 @@ body{
     height: 300px;
     background-image: url('Screenshot BhutanChild.png');
     background-size: cover;
-    border: #EDF6F9 ridge 5px;
+    border: #FFCA3A ridge 10px;
     border-radius: 20px;
     margin-top: 150px;
     animation-name: side;
@@ -318,7 +327,7 @@ body{
 #childCaption{
     font-weight: bolder;
     font-size: 50px;
-    color: #E29578;
+    color: #8AC926;
     margin-top: 175px;
     margin-left: 400px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -327,28 +336,29 @@ body{
     animation-duration: 5s;
 }
 #bhCap{
-    color: #E29578;
+    color: #1982C4;
     padding: 5px;
-    background: #EDF6F9;
+    background: #FFCA3A;
     border-radius: 20px;
     animation-name: fade_in;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
 }
 .bhStat{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #83C5BE;
+    color: #6A4C93;
 }
 #bhInfo{
     width: 80%;
-    color: #EDF6F9;
+    color: #6A4C93;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-stretch: condensed;
+    text-shadow: 2px 2px #8AC926;
 }
 #centerAnimate{
     animation-name: sideRight;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: 2;
     text-align: left;
 }
@@ -361,13 +371,14 @@ body{
 }
 .bhProgram{
     padding: 5px;
-    background: #EDF6F9;
-    color: #E29578;
+    background: #1982C4;
+    color: #FFCA3A;
     border-radius: 25px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
     padding-left: 25px;
+    text-shadow: #FF595E 2px 2px;
 }
 .footer{
     height: 255px;
@@ -380,7 +391,7 @@ body{
 .partners{
     height: 125px;
     width: 15%;
-    border: #E29578 solid 3px;
+    border: #1982C4 solid 3px;
 }
 @keyframes slideBottom {
     from{
@@ -394,7 +405,7 @@ body{
     width: 100%;
     margin-top: 150px;
     background-image: url("Screenshot Nepal Paupers.png");
-    border: #E29578 ridge 3px;
+    border: #FFCA3A ridge 3px;
     border-radius: 30px;
 }
 #nepalDivCap{
@@ -402,7 +413,7 @@ body{
     font-weight: bold;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #006D77;
+    color: rgb(5, 5, 97);
     margin-left: 300px;
     margin-top: 100px;
     padding: 10px;
@@ -416,4 +427,173 @@ body{
     animation-name: slide;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+}
+#DivH{
+    color: #FFDDD2;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+#nepalInfo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    color: #1982C4;
+    padding-left: 100px;
+    align-items: left;
+    padding-right: 200px;
+    background: #FFCA3A;
+    padding: 10px;
+}
+.programsNepal{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6A4C93;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#statsNepal{
+    height: 200px;
+    width: 100%;
+    background-color: #8AC926;
+    display: inline-flex;
+}
+#statsNepal div{
+    width: 33%;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1982C4;
+    border: white 2px solid;
+    margin-right: 50px;
+    animation-name: slideTop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+#about{
+    background-color: #FFCA3A;
+    color: #1982C4;
+    padding-top: 20px;
+    width: 100%;
+    animation-name: slideTop;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    border-radius: 40px;
+}
+#information{
+    margin-top: 150px;
+    color: #6A4C93;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(#FF595E, #1982C4);
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#p{
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 18px;
+}
+#imagess{
+    height: 150px;
+    width: 100%;
+    background-color: #8AC926;
+    display: inline-flex;
+    margin-top: 0px;
+    position: fixed;
+    margin-left: -630px;
+}
+.imgs{
+    width: 25%;
+    margin-top: 10px;
+    color: #8AC926;
+}
+.imgs2{
+    border: white 2px ridge;
+    border-radius: 3px;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    margin-left: 20px;
+    background-size: cover;
+}
+.imgsCaption{
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+.imgs2:hover{
+    border: 10px #6A4C93 ridge;
+    margin-top: -10px;
+}
+#impacts{
+    color: #1982C4;
+    font-size: 16px;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#impacts p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.impactss{
+    margin-top: 200px;
+}
+.spacing{
+    padding-top: 175px;
+}
+#sections{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#row1, #row2{
+    display: inline-flex;
+}
+#sections img{
+    border: #1982C4 3px solid;
+    border-radius: 20px;
+}
+#storyPage{
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    color: #1982C4;
+    margin-top: 150px;
+    width: 80%;
+    margin-left: 100px;
+}
+#storyPage p{
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#storyPage img{
+    border: solid #8AC926 3px;
+    border-radius: 30px;
+}
+#flex{
+    display: inline-flex;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
