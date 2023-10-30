@@ -1,599 +1,449 @@
-body{
-    background: #FF595E;
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#homeA{
-    font-style: italic;
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
 }
-.menu{
-    width: 95%;
-    background: #8AC926;
-    padding: 30px;
-    font-size: 25px;
-    margin: 0;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: -20px;
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
 }
-.menu a{
-    margin-left: 40px;
-    color: #EBEBD3;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
-#donate_btn{
-    border-radius: 10px;
-    padding: 10px;
-    background: #6A4C93;
-    font-weight: bold;
-    padding-left: 60px;
-    padding-right: 60px;
-    animation-name: border_;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+
+.header a:hover {
+  background-color: #E9C46A;
+  color: black;
 }
-#donate_btn:hover{
-    background-color: #FFCA3A;
+
+.header a.active {
+  background-color: #264653;
+  color: white;
 }
-@keyframes border_ {
-    from{
-        border: #8AC926 solid 3px;
-    }
-    to{
-        border: #1982C4 solid 3px;
-    }
+
+.header-right {
+  float: right;
 }
-#logo{
-    margin-left: 30px;
-    border-radius: 40px;
-    border: white 10px solid;
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
-#home{
-    background-image: linear-gradient(to bottom right, #8AC926, #FFCA3A);
+
+.home {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('gif.webp');
+  background-size: cover;
+  background-color: #2a9d8f;
+  background-blend-mode: lighten;
+}
+
+.about {
+  background-color: #2A9D8F;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#contact{
+  background-color: #396678;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+#donate{
+  background-color: #E76F51;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E9C46A;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+#counter1, #counter2, #counter3{
+    font-size:  50px;
+}
+
+.column {
+  margin: 5px;
+  float: left;
+  width: 24%;
+  padding: 15px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#one{
+  background-color: #264653;
+}
+#one:hover{
+  background-color: #396678;
+}
+
+#two{
+  background-color: #2A9D8F;
+}
+#two:hover{
+  background-color: #36beae;
+}
+
+#three{
+  background-color: #fad575;
+}
+#three:hover{
+  background-color: #ead191;
+}
+
+#four{
+  background-color: #E76F51;
+}
+#four:hover{
+  background-color: #f79076;
+}
+
+.column p{
+    font-size: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The Timeline */
+
+#achieve{
+    background-color: #F4A261;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: -100px;
+}
+
+#donate .notice{
+    background-image: linear-gradient(to top left, #EDF6F9, #e9b86a);
     animation-name: fade_in;
     animation-duration: 2s;
     animation-iteration-count: 1;
     height: 400px;
-    width: 70%;
+    width: 600px;
     margin-top: 40px;
     margin-left: 100px; 
     font-family: 'Courier New', Courier, monospace;
-    color: #1982C4;
-    box-shadow: #FFCA3A -15px -15px 10px;
+    color: #264653;
+    box-shadow: #264653 -10px -10px 20px;
 }
 @keyframes fade_in {
     0%{
         opacity: 0;
         transform: translateY(-40px) scale(0.9);
-        box-shadow: #6A4C93 -15px -15px 10px;
     }
     100%{
         opacity: 1;
         transform: translateY(0px) scale(1);
-        box-shadow: #FFCA3A -15px -15px 10px;
     }
 }
-.line{
-    height: 100px;
-    background-color: #6A4C93;
+
+
+#form1{
+  padding: 20px;
+  background-color: #ead191;
+  border-radius: 5px;
+  width: 40%;
+  height: 100%;
+  float: right;
+  margin: 0px 20px;
+  margin-top: -400px;
 }
-#notice{
-    margin-top: 50px;
-    color: #FF595E;
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+#form2{
+  padding: 20px;
+  background-color: #2A9D8F;
+  border-radius: 5px;
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin: 0px 20px;
+  margin-top: -100px;
+  display: inline;
 }
-#gallery{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    color: white;
-    text-align: center; 
-    margin-bottom: -25px;
-    border: 2px white solid;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 50px;
-    background-color: #1982C4;
+
+input, #input{
+  width: 70%;
+  height: 100%;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
-#img1{
-    background: #1982C4;
-    border: white 4px solid;
-    box-shadow: #8AC926 -10px -10px 10px;
+
+.btn2{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E76F51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 30%;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-#img2{
-    background: #FFCA3A;
-    border: white 4px solid;
-    box-shadow: #1982C4 -10px -10px 10px;
+
+.btn2:hover{
+  background-color: #E9C46A;
+  color: black;
 }
-#img3{
-    background: #6A4C93;
-    border: white 4px solid;
-    box-shadow: #FF595E -10px -10px 10px;
+
+.btn3{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #396678;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 30%;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-#img4{
-    background: #8AC926;
-    border: white 4px solid;
-    box-shadow: #6A4C93 -10px -10px 10px;
+
+.btn3:hover{
+  background-color: #ead191;
+  color: black;
 }
-#imagesMarquee{
-    display: inline-flex;
-    width: 100%;
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-@keyframes slideL{
-    from{
-        transform: translateX(-100%);
-    }to{
-        transform: translateX(0%);
-    }
+
+label{
+  margin: 10px 20px;
 }
-@keyframes slideR{
-    from{
-        transform: translateX(100%);
-    }to{
-        transform: translateX(0%);
-    }
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/*@keyframes left_img {
-    0%{
-        transform: translateX(-50px) translateY(-50px) scale(0.9);
-    }
-    100%{
-        transform: translateX(0px) translateY(0px) scale(1);
-    }
+
+
+
+/*timeline*/
+
+
+.event{
+  background-color: white;
+  color: #264653;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+  
 }
-@keyframes right_img {
-    0%{
-        transform: translateX(50px) translateY(-100px) scale(0.9);
-    }
-    100%{
-        transform: translateX(0px) translateY(-150px) scale(1);
-    }
-}*/
-.image_caption{
-    font-size: 18px;
-    color: white;
-    margin-left: 50px;
+
+.event:hover{
+  background-color: #2A9D8F;
+  color:#EDF6F9;
 }
-.fadeBody{
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+
+#abouttext{
+  color: #f1f1f1;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+  text-transform:unset;
+
 }
-@keyframes fade {
-    from{opacity: 0;}
-    to{opacity: 1;}
+
+.msg{
+  background-color: #264653;
+  width: 80%;
+  border-radius: 5px;
+  height: auto;
+  padding: 15px;
+  align-items: center;
+  animation-name: fade_in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  box-shadow: #ead191 10px 10px 20px;
 }
-#india, #nepal, #bhutan{
-    margin-left: 50px;
+
+footer {
+  background-color: #2c2f30;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.countryImg{
-    border: white ridge 5px;
-    height: 250px;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-top: 15px;
+
+#contactREAD{
+  display: inline-flex;
+  background: #FEC601;
+  width: 100%;
+  height: 200px;
 }
-.countryCaption{
-    color: #1982C4;
-    font-weight: 500;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+.icons{
+  height: 150px;
+  margin: 25px;
+  margin-left: 100px;
+  border: #73BFB8 3px solid;
+  padding: 25px;
+  border-radius: 30px;
 }
-#animationDiv{
-    animation-name: side;
-    animation-duration: 2.5s;
-    animation-iteration-count: 1;
-    display: inline-flex;
+.icons:hover{
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
-@keyframes side {
-    from{
-        opacity: 0;
-        transform: translateX(-100%);
-    }to{
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-.countryImgCaption{
-    color: #FFCA3A;
-    font-weight: bold;
-}
-#gSchool{
-    width: 90%; 
-    height: 300px;
-    background-image: url('Screenshot-government-kids.png');
-    background-size: cover;
-    border: #6A4C93 ridge 5px;
-    border-radius: 20px;
-    margin-top: 150px;
-}
-#gSchoolCaption{
-    color: #FFCA3A;
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #1982C4;
-    padding: 15px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 35px;
-    animation-name: fontGrow;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-@keyframes fontGrow {
-    from{
-        font-size: 20px;
-    }to{
-        font-size: 30px;
-    }
-}
-#indiaCaption{
-    font-weight: bold;
-    animation-name: boldNcolor;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    color: #1982C4;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-@keyframes boldNcolor {
-    from{
-        font-weight: lighter;
-        color: #8AC926;
-    }to{
-        font-weight: bold;
-        color: #1982C4;
-    }
-}
-.statistics{
-    background-color: #1982C4;
-    height: 600px;
-    width: 20%;
-    border: #EDF6F9 3px solid;
-}
-.centres, .access, .villages{
-    height: 200px;
-    color: #8AC926;
-    margin-left: 30px;
-    font-weight: lighter;
-}
-#noOfCentres, #noOfAccess, #noOfVillagers{
-    float: right;
-    margin-right: 80px;
-    font-weight: bolder;
-}
-#info{
-    width: 80%;
-    color: white;
-}
-#headInfo{
-    animation-name: slide;
-    animation-duration: 5s;
-    animation-iteration-count: 2;
-}
-.line2{
-    width: 100px;
-    height: 10px;
-    background-color: #FFCA3A;
-    border-radius: 2px;
-}
-@keyframes slide {
-    0%{
-        transform: translateX(-100%);
-        opacity: 0;
-    }100%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-.programTitle{
-    display: inline-block;  
-    background-color: #FFDDD2;
-    border-radius: 2px;
-    padding: 15px;
-    color: #1982C4;
-}
-.programs{
-    display: inline-block;  
-    background-color: #FFDDD2;
-    border-radius: 2px;
-    padding: 15px;
-    color: #E29578;
-    margin-top: -22px;
-}
-#visit{
-    color: skyblue;
-}
-#visit:hover{
-    color: orange;
-}
-#visitLine{
-    padding: 15px;
-    background-color: #1982C4;
-    color: #E29578;
-}
-#bhutanChild{
-    width: 90%; 
-    height: 300px;
-    background-image: url('Screenshot BhutanChild.png');
-    background-size: cover;
-    border: #FFCA3A ridge 10px;
-    border-radius: 20px;
-    margin-top: 150px;
-    animation-name: side;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-#childCaption{
-    font-weight: bolder;
-    font-size: 50px;
-    color: #8AC926;
-    margin-top: 175px;
-    margin-left: 400px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation-name: fade;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
-}
-#bhCap{
-    color: #1982C4;
-    padding: 5px;
-    background: #FFCA3A;
-    border-radius: 20px;
-    animation-name: fade_in;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-}
-.bhStat{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #6A4C93;
-}
-#bhInfo{
-    width: 80%;
-    color: #6A4C93;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-stretch: condensed;
-    text-shadow: 2px 2px #8AC926;
-}
-#centerAnimate{
-    animation-name: sideRight;
-    animation-duration: 4s;
-    animation-iteration-count: 2;
-    text-align: left;
-}
-@keyframes sideRight{
-    from{
-        transform: translateX(100%);
-    }to{
-        transform: translateX(0%);
-    }
-}
-.bhProgram{
-    padding: 5px;
-    background: #1982C4;
-    color: #FFCA3A;
-    border-radius: 25px;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-    'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-left: 25px;
-    text-shadow: #FF595E 2px 2px;
-}
-.footer{
-    height: 255px;
-    width: 100%;
-    margin-top: 50px;
-    animation-name: slideBottom;
-    animation-duration: 7s;
-    animation-iteration-count: 3;
-}
-.partners{
-    height: 125px;
-    width: 15%;
-    border: #1982C4 solid 3px;
-}
-@keyframes slideBottom {
-    from{
-        transform: translateY(100%);
-    }to{
-        transform: translateY(0%);
-    }
-}
-#nepalDiv{
-    height: 300px;
-    width: 100%;
-    margin-top: 150px;
-    background-image: url("Screenshot Nepal Paupers.png");
-    border: #FFCA3A ridge 3px;
-    border-radius: 30px;
-}
-#nepalDivCap{
-    font-size: 40px;
-    font-weight: bold;
-    font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(5, 5, 97);
-    margin-left: 300px;
-    margin-top: 100px;
-    padding: 10px;
-    background: linear-gradient(white, crimson);
-    width: 220px;
-    border-radius: 30px;
-    border: dashed rgb(5, 5, 97) 4px;
-    height: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    animation-name: slide;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-}
-#DivH{
-    color: #FFDDD2;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-}
-#nepalInfo{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 50px;
-    color: #1982C4;
-    padding-left: 100px;
-    align-items: left;
-    padding-right: 200px;
-    background: #FFCA3A;
-    padding: 10px;
-}
-.programsNepal{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #6A4C93;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-#statsNepal{
-    height: 200px;
-    width: 100%;
-    background-color: #8AC926;
-    display: inline-flex;
-}
-#statsNepal div{
-    width: 33%;
-    margin-left: 50px;
-    margin-top: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1982C4;
-    border: white 2px solid;
-    margin-right: 50px;
-    animation-name: slideTop;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-@keyframes slideTop {
-    0%{
-        opacity: 0;
-        transform: translateY(-100%);
-    }100%{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-#about{
-    background-color: #FFCA3A;
-    color: #1982C4;
-    padding-top: 20px;
-    width: 100%;
-    animation-name: slideTop;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    border-radius: 40px;
+@keyframes rotate{
+  50%{
+    transform: rotate(360deg);
+  }
 }
 #information{
-    margin-top: 150px;
-    color: #6A4C93;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(#FF595E, #1982C4);
-    width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  background-color: #73BFB8;
+  padding-top: 50px;
+  padding-left: 50px;
+  color: #264653;
 }
-#p{
-    text-align: left;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-size: 18px;
+.hr{
+  color: white;
 }
-#imagess{
-    height: 150px;
-    width: 100%;
-    background-color: #8AC926;
-    display: inline-flex;
-    margin-top: 0px;
-    position: fixed;
-    margin-left: -630px;
-}
-.imgs{
-    width: 25%;
-    margin-top: 10px;
-    color: #8AC926;
+#images{
+  background-color: #E9C46A;
+  display: inline-flex;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 70px;
 }
 .imgs2{
-    border: white 2px ridge;
-    border-radius: 3px;
-    animation-name: slide;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    margin-left: 20px;
-    background-size: cover;
-}
-.imgsCaption{
-    animation-name: slide;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
+  background-size: cover;
+  margin-left: 30px;
+  box-shadow: grey -10px -10px 10px;
+  transform: translateX(-5px);
+  transform: translateY(-5px);
 }
 .imgs2:hover{
-    border: 10px #6A4C93 ridge;
-    margin-top: -10px;
+  box-shadow: grey 10px 10px 10px;
+  transform: translateX(0px);
+  transform: translateY(0px);
 }
-#impacts{
-    color: #1982C4;
-    font-size: 16px;
-    animation-name: slide;
-    animation-duration: 15s;
-    animation-iteration-count: 1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#impacts p{
-    font-size: 18px;
-    font-weight: lighter;
-}
-.impactss{
-    margin-top: 200px;
+.imgs{
+  width: 24%;
 }
 .spacing{
-    padding-top: 175px;
+  margin-top: 150px;
 }
-#sections{
-    margin-left: 200px;
-    margin-right: 200px;
+.imgsCaption{
+  text-align: center;
+  margin-top: 50px;
+  color: #2a9d8f;
+  background-color: white;
 }
-#row1, #row2{
-    display: inline-flex;
+#india, #nepal, #bhutan{
+  margin-left: 50px;
 }
-#sections img{
-    border: #1982C4 3px solid;
-    border-radius: 20px;
+.countryImg{
+  border: white ridge 5px;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-top: 15px;
+  box-shadow: #264653 10px 10px 10px;
 }
-#storyPage{
-    animation-name: fade;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    color: #1982C4;
-    margin-top: 150px;
-    width: 80%;
-    margin-left: 100px;
+.countryCaption{
+  color: #EA7317;
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
 }
-#storyPage p{
-    background: white;
-    padding: 10px;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#animationDiv{
+  animation-name: side;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  display: inline-flex;
+  margin-top: 30px;
 }
-#storyPage img{
-    border: solid #8AC926 3px;
-    border-radius: 30px;
+@keyframes side {
+  from{
+      opacity: 0;
+      transform: translateX(-100%);
+  }to{
+      opacity: 1;
+      transform: translateX(0%);
+  }
 }
-#flex{
-    display: inline-flex;
+.countryImgCaption{
+  color: #FFCA3A;
+  font-weight: bold;
 }
-@keyframes fade {
-    0%{
-        opacity: 0;
-        transform: translateY(-40px) scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+.event img{
+  box-shadow: 5px -5px 10px #73BFB8;
+}
+.event img:hover{
+  height: 115px;
+}
+#achieve{
+  background-image: url('achieve.png');
 }
